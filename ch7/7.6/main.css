@@ -1,0 +1,20 @@
+/* 선택자 ABC가 형제 요소 중 첫째라면 선택 */
+/* first-child */
+.fruits span:first-child{
+  color: red;
+}
+/* 선택자 ABC가 형제 요소 중 막내라면 선택 */
+/* last-child */
+.fruits h3:last-child{
+  color: blue;
+}
+/* 선택자 ABC가 형제 요소 중 (n)째라면 선택 */
+/* nth-child , n은 0부터 시작 */
+.fruits *:nth-child(2n){
+  color: pink;
+}
+/* 부정 선택자. 선택자 xyz가 아닌 abc 요소 선택 */
+/* not(xyz) */
+.fruits *:not(span){
+  color: brown;
+}

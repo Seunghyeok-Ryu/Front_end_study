@@ -1,0 +1,24 @@
+/* 가상 요소 선택자. 선택자 ABC 요소의 내부 앞에 내용을 삽입 */
+/*::before  content:""; */
+/* 가상 요소 선택자는 content와 세트 */
+.box::before{
+  content: "앞!";
+}
+/* 가상 요소 선택자. 선택자 ABC 요소의 내부 뒤에 내용을 삽입 */
+/*::after , content:"";  */
+.box::after{
+  content: "뒤!";
+}
+.square{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
+.square::before{
+  content: "";
+  /* 인라인 요소 -> block요소로 변경 */
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: royalblue;
+}

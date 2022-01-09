@@ -1,0 +1,19 @@
+/* 전체 선택자 * */
+*{
+  color: red;
+}
+/* 태그 선택자 */
+li{
+  color: blue;
+}
+p{
+  color: pink;
+}
+/* class 선택자 */
+.orange{
+  color: green;
+}
+/* id 선택자 # */
+#abc{
+  color: yellow;
+}

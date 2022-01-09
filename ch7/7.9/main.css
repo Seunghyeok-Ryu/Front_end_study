@@ -1,0 +1,17 @@
+/* 부모 요소로서 자식요소로 상속 된다  */
+/* animal 안에 있는 tiger,lion,elephant가 상속된다 */
+/* 상속되는 CSS 속성들은 모두 글자/문자 속성들 */
+.animal{
+  color: red;
+}
+.parent{
+  width: 300px;
+  height: 200px;
+  background-color: red;
+}
+/* 강제 상속 inherit */
+.child{
+  width: 100px;
+  height: inherit;
+  background-color: orange;
+}

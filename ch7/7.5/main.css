@@ -1,0 +1,32 @@
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transition: 1s;
+}
+/* 가상 클래스 선택자 :hover  */
+/* focus 사용 불가(단 html에서 tabindex="-1" 추가시 사용 가능) */
+/* input 요소에서는 tabindex 사용 안해도 됨 */
+.box:hover {
+  width: 300px;
+  background-color: royalblue;
+}
+/*
+a:hover{
+  color: red;  
+}*/
+/* active 클릭 하고 있는동안 사용 */
+a:active{
+  color : yellow;
+}
+/* focus 포커스가 되면 선택 */
+/* input 요소, 사용자에게 데이터 입력 받는 요소에 사용 가능 */
+/*input:focus{
+  background-color: orange;
+}*/
+input{
+
+}
+input:focus{
+  background-color: orange;
+}

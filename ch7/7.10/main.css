@@ -1,0 +1,26 @@
+/*
+div{color: red !important;}
+#ccolor_yellow{color: yellow;}
+.color_green{color: green;}
+div{color: blue;}
+*{color: darkblue;}
+body{color: violet;}
+*/
+/*
+  body : 상속 X
+  전체 선택자(*) : 0점
+  태그 선택자(div,span), 가상 요소 선택자(before,after) : 1점
+  Class 선택자(.color_green), 가상 Class 선택자(:hover) : 10점
+  ID 선택자(#ccolor_yellow) : 100점
+  인라인 선언 : 1000점
+  !important : 99999999999999999999점
+*/
+div{
+  font-size: 50px;
+}
+div.hello{
+  color: red;
+}
+.hello{
+  color: blue;
+}

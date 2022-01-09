@@ -1,0 +1,26 @@
+/* 복합 선택자 abc 와 xyz 동시 만족 */
+div{
+  font-size: 15px;
+}
+span.orange{
+  color: red;
+}
+/* 자식 선택자 abc의 자식요소 xyz 선택 ( > .) */
+ul > .orange{
+  color: pink;
+}
+/* 하휘(후손) 선택자  띄어쓰기가 선택자 기호 */
+div .orange
+{
+  color: yellow;
+}
+/* 인접 형제 선택자 + 기호 사용 */
+/* class="orange"를 찾고 바로 다음 li 태그를 찾음*/
+.orange + li{
+  color: aqua;
+}
+/* 일반 형제 선택자 ~ 기호 사용 */
+/* orange이후 모든 태그 */
+.orange ~ li{
+  color :  brown ;
+}

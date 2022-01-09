@@ -1,0 +1,11 @@
+/* 속성 선택자. 속성 ABC를 포함한 요소 선택 */
+/* 속성 선택시 대괄호 사용 [] */
+[disabled]{
+  color :red;
+}
+[type="password"]{
+  background-color: orange;
+}
+[data-friut-name]{
+  color: red;
+}
