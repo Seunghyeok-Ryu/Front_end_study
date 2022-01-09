@@ -1,0 +1,23 @@
+/* 가로(width), 세로(height) 기본 값 : atuo 단위 : px,em,vw */
+/* div 블럭 span 인라인 요소 */
+
+span{
+  background-color: orange;
+}
+div{
+  background-color: red;
+}
+
+/* 최대 가로/세로 너비 */
+/* max-width, max-height 기본값 : none */
+/* min-width, min-height 기본값 : 0 */
+.parent{
+  width : 300px;
+  height: 200px;
+  background-color: royalblue;
+}
+.child{
+  min-width: 400px;
+  height: 100px;
+  background-color: pink;
+}
