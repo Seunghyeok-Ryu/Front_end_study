@@ -1,0 +1,8 @@
+/* border-radius 모서리 둥글게 */
+div{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  margin: 20px;
+  border-radius: 0 20px 0 50px;
+}
