@@ -1,0 +1,31 @@
+/* display : 요소의 화면 출력(보여짐) 특성 */
+/* display
+각 요소에 이미 지정되 어있는 값
+  block : 상자(레이아웃) 요소
+  inline : 글자 요소
+  inline-block : 글자 + 상자 요소
+따로 지정해서 사용하는 값
+  flex : 플렉스 박스(1차원 레이아웃) -> 수평 정렬 or 수직 정렬
+  grid : 그리드(2차원 레이아웃) -> 행과열
+  none : 보여짐 특성 없음, 화면에서 사라짐 */
+body{
+  margin: 20px;
+}
+span{
+  display: block;
+  width: 120px;
+  height: 30px;
+  background-color: royalblue;
+  color: white;
+}
+
+/* HTML <a></a>에 가로 너비를 지정하기 위해 사용해야하는 속성과 값?
+A. display: block;
+*/
+a{
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  color: red;
+}
