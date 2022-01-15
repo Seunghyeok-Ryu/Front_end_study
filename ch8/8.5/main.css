@@ -1,0 +1,11 @@
+/* padding 내부 여백 지정 단축 속성 */
+.container .item{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  border: 4px solid red;
+}
+.container .item:first-child{
+  padding :20px 10px 50px 5px;
+}
+/* padding-방향 개별적으로 방향 속성을 나타낼 수 있다 */
