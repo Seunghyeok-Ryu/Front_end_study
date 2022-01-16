@@ -1,0 +1,14 @@
+body{
+  height: 3000px;
+}
+/* 인라인 요소를 block요소로 바꿈
+  position : absolute / fixed 
+  display : block; 따로 입력 불필요
+*/ 
+span{
+  width: 100px;
+  height: 100px;
+  font-size: 40px;
+  background-color: orange;
+  position: absolute;
+}
