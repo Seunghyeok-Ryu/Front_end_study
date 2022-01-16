@@ -1,0 +1,12 @@
+/* display : flex; -> 수평 정렬 */
+.container{
+  background-color: royalblue;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.container .item{
+  width: 100px;
+  height: 100px;
+  border: 3px dashed red;
+  background-color: orange;
+}
