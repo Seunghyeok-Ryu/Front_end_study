@@ -1,0 +1,21 @@
+body{
+  padding: 30px;
+}
+.container{
+  background-color: royalblue;
+  width: 100px;
+  height: 100px;
+  perspective: 250px;
+}
+
+.container .item{
+  background-color: orange;
+  width: 100px;
+  height: 100px;
+  font-size: 60px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(45deg);
+  backface-visibility: hidden;
+}
