@@ -1,0 +1,11 @@
+div{
+  background-color: orange;
+  width: 100px;
+  height: 100px;
+  transition: 1s 1s;
+}
+/* 가상 클래스 선택자 : hover(마우스 올릴시),active(클릭시) 변환 */
+div:hover{
+  width: 300px;
+  background-color: royalblue;
+}
