@@ -1,0 +1,22 @@
+body{
+  padding: 50px;
+}
+/* padding 내부 여백 */
+.container{
+  width: 100px;
+  height: 100px;
+  background-color: royalblue;
+}
+
+.container .item:nth-child(1){
+  background-color: orange;
+  width: 100px;
+  height: 100px;
+  transform: translate(40px,40px) perspective(500px) rotateX(45deg);
+}
+.container .item:nth-child(2){
+  background-color: orange;
+  width: 100px;
+  height: 100px;
+  transform: translate(0px,80px) skewY(45deg);
+}
