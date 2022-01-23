@@ -17,8 +17,24 @@ searchInputEl.addEventListener('blur', function (){
 });
 
 // Scroll 
-const badgeEl = document.querySelector('.header .badges');
+// _.throttle(함수, 시간(ms))
+// opacity : 화면 보임 안보임, display : 실제 블럭 존재 유무
+const badgeEl = document.querySelector('header .badges');
 
-window.addEventListener('scroll',function () {
-  console.log('scroll!');
-});
+window.addEventListener('scroll', _.throttle(function () {
+  console.log(window.scrollY);
+  if(window.scrollY > 500){
+    // badge 숨기기
+    // gsap.to(요소, 지속시간, 옵션);
+    gsap.to(badgeEl, .6, {
+      opacity : 0,
+      display : 'none'
+    });
+  } else{
+    // badge 보이기
+    gsap.to(badgeEl, .6, {
+      opacity : 1,
+      display : 'block'
+    });
+  }
+}, 300));
