@@ -128,7 +128,7 @@ floatingObject('.floating2', .1, 15);
 floatingObject('.floating3', 1.5, 20);
 
 // ScrollMagic
-const spyEls = document.querySelectorAll('section.scroll-spy')
+const spyEls = document.querySelectorAll('section.scroll-spy');
   spyEls.forEach(function (spyEl) {
     new ScrollMagic
       .Scene({
@@ -138,3 +138,7 @@ const spyEls = document.querySelectorAll('section.scroll-spy')
       .setClassToggle(spyEl, 'show')
       .addTo(new ScrollMagic.Controller())
   });
+
+// YEAR
+const thisYear = document.querySelector('.this-year');
+  thisYear.textContent = new Date().getFullYear();    //2021
