@@ -23,3 +23,26 @@ let a = 2;
 // a = a + 1;
 a += 2;     // +대신 다른 산술연산자(/,*,%,-) 모두 사용 가능
 console.log(a);
+
+// 비교 연산자(comparison operator)
+
+const c = 2;
+const d = 2;
+
+console.log(c === d);   // 일치 연산자 (x === y), 일치시 True
+console.log(c !== d);   // 불일치 연산자 (x !== d), 불일치시 True
+console.log(c >= d);     // 비교 연산자 (x < y), 비교 값이 맞을 시 True
+// <= : 이상/이하 < : 미만 초과
+
+// 논리 연산자
+const e = 1 === 123;
+const f = 'AB' === 'ABC';
+const g = false;
+
+console.log(e);
+console.log(f);
+console.log(g);
+
+console.log('&&: ', e && f && g);      // && 그리고(and)  하나라도 false일시 False
+console.log('||: ', e || f || g);      // || 또는(or) 모든 값중 하나라도 true시 True
+console.log('!: ', !e);   // !(부정 연산자) True시 False 출력 False시 True 출력
