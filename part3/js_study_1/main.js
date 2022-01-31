@@ -46,3 +46,18 @@ console.log(g);
 console.log('&&: ', e && f && g);      // && 그리고(and)  하나라도 false일시 False
 console.log('||: ', e || f || g);      // || 또는(or) 모든 값중 하나라도 true시 True
 console.log('!: ', !e);   // !(부정 연산자) True시 False 출력 False시 True 출력
+
+// 삼항 연산자(ternary operator)
+
+const h = 1 < 2;
+
+if (h) {
+  console.log('참')
+}else {
+  console.log('거짓')
+};
+
+console.log(h ? '참' : '거짓');   // ? 참이면 앞 부분 거짓이면 뒷부분 실행
+
+
+
