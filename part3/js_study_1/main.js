@@ -122,3 +122,21 @@ function scope() {
   console.log(k)
 }
 scope()
+
+// 형 변환(Type conversion)
+// == 동등 연산자
+
+const l = 1
+const m ='1'
+
+console.log(l == m)   // 동등 연산자 사용시 형 변환이 일어나 True 출력됨 
+
+// Truthy(참 같은 값)
+// true, {}, [], 1, 2, 'false'(문자 데이터), -12, '3.14'
+
+// Falsy(거짓 같은 값)
+// false, '', null, undefined, 0, -0, NaN
+
+if (true){
+  console.log(123)
+}
