@@ -61,9 +61,11 @@ console.log(h ? '참' : '거짓');   // ? 참이면 앞 부분 거짓이면 뒷�
 
 
 // 조건문 if else
-import random from './getRandom';
 
-const i = random();
+import random from './getRandom';   // getRandom.js 에서 가져옴
+
+const i = random()
+
 if(i === 0){
   console.log('i is 0')
 } else if(i === 2) {
@@ -74,3 +76,19 @@ if(i === 0){
   console.log('rest...')
 }
 
+
+// 조건문(Switch statement)
+
+switch (i) {
+  case 0:
+    console.log('i is 0!')
+    break
+  case 2:
+    console.log('i is 2!')
+    break
+  case 4:
+    console.log('i is 4!')
+    break
+  default:
+    console.log('rest!!')
+}
