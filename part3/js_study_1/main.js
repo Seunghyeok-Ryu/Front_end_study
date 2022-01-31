@@ -60,4 +60,17 @@ if (h) {
 console.log(h ? '참' : '거짓');   // ? 참이면 앞 부분 거짓이면 뒷부분 실행
 
 
+// 조건문 if else
+import random from './getRandom';
+
+const i = random();
+if(i === 0){
+  console.log('i is 0')
+} else if(i === 2) {
+  console.log('i is 2')
+} else if(i === 4) {
+  console.log('i is 4')
+} else {
+  console.log('rest...')
+}
 
