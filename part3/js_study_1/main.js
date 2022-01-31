@@ -110,3 +110,15 @@ for (let j=0 ; j<10; j+=1) {
   }
   ulEl.appendChild(li)
 }
+
+// 변수 유효범위(Variable Scope)
+// var, let, const
+// let, const 블록 레벨의 유효 범위를 가짐
+// var 함수 레벨의 유효 범위를 가짐
+function scope() {
+  if (true) {
+    var k = 123
+  }
+  console.log(k)
+}
+scope()
