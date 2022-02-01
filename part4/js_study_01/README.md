@@ -107,8 +107,17 @@
 
 # 데이터 불변성(Immutability)
 
-# 원시 데이터
+## 원시 데이터
 - String, Number, Boolean, undefined, null
 
-# 참조형 데이터
+## 참조형 데이터
 - Object, Array, Function
+
+# 얕은 복사와 깊은 복사
+
+## 얕은 복사(Shallow copy)
+- 객체,배열 복사할 때 내부에 또다른 객체/참조형 데이터가 없을 때 사용
+
+## 깊은 복사(Deep copy)
+- 객체,배열 복사할 때 내부에 또다른 객체/참조형 데이터가 존재할 때 사용
+- lodash를 이용한 복사(const A = _.clondeep(a))

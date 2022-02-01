@@ -190,3 +190,32 @@ console.log(n, o, p, n === p)   // 모두 {k:2} 같은 메모리(True)
 n.k = 9   // n,o,p 모두 {k:9}로 할당 
 console.log(n, o, p, n === p)   // 여전히 같은 메모리(True)
       // 하나의 값을 바꿨을 때 다른 값도 바뀔 수 있음 주의!
+
+
+// 얕은 복사(Shallow copy), 깊은 복사(Deep copy)
+import _ from 'lodash'
+
+
+const oner = {
+  name: 'harrisonryu',
+  age: 25,
+  emails: ['harrisonryu@naver.com']
+}
+// const copyOner = Object.assign({}, oner)   얕은 복사
+// 새로운 객체에 oner를 넣고 Object.assign에 넣고 반환. 새로운 메모리에 할당
+
+// const copyOner = {...oner}  // 전개 연사자로 복사 방법  얕은 복사
+
+const copyOner = _.cloneDeep(oner)  // lodash를 이용한 깊은 복사
+
+console.log(copyOner === oner)  // 서로 다른 메모리에 할당됨
+
+oner.age = 22   // 서로 다른 객체 데이터에 영향을 끼치지 않음
+console.log('oner', oner)
+console.log('copyOner', copyOner)  
+
+
+oner.emails.push('neo@naver.com')
+console.log(oner.emails === copyOner.emails)
+console.log('oner', oner)
+console.log('copyOner', copyOner)
