@@ -162,3 +162,31 @@ fruits.push('orange')
 const toObject = (aa, bb, ...cc) => ({aa, bb, cc})
 console.log(toObject(...fruits))
 fruits.splice(3,1)
+
+// 데이터 불변성(Immutability)
+
+// 원시 데이터
+let k = 1
+let l = 4
+console.log(k, l, k === l)
+l = k
+console.log(k, l, k === l)
+k = 7
+console.log(k, l, k === l)
+let m = 1     // 원시 데이터 : 이미 만들어진 k = 1 이라는 메모리를 바라보게 함
+console.log(l, m, l === m)    // 같은 메모리를 바로보고 있음으로 True
+
+// 참조형 데이터
+let n = { k : 1 }
+let o = { k : 1 }       // 생김새가 같더라도 서로 다른 메모리에 할당
+console.log(n, o, n === o)    // 서로 다른 메모리를 바라보고 있음(False)
+n.k = 7
+o = n     // n을o로 넣어줌 -> 같은 메모리를 바라보게 됨.
+console.log(n, o ,n === o)    // True
+n.k = 2   // n 내부 k 값을 바꿔줌.  n,o는 계속해서 같은 메모리를 바라보고 있음으로 두게 모두 바뀜
+console.log(n, o, n === o)  // n,o {K:2} 로 바뀜(True)
+let p = o     // o={k:2}를 p로 할당 같은 메모리를 바라봄.
+console.log(n, o, p, n === p)   // 모두 {k:2} 같은 메모리(True)
+n.k = 9   // n,o,p 모두 {k:9}로 할당 
+console.log(n, o, p, n === p)   // 여전히 같은 메모리(True)
+      // 하나의 값을 바꿨을 때 다른 값도 바뀔 수 있음 주의!

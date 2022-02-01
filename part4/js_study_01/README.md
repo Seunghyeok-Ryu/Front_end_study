@@ -104,3 +104,11 @@
 ## .keys()
 - porperty 이름만 출력해냄
 - 객체 데이터
+
+# 데이터 불변성(Immutability)
+
+# 원시 데이터
+- String, Number, Boolean, undefined, null
+
+# 참조형 데이터
+- Object, Array, Function
