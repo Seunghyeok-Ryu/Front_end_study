@@ -151,5 +151,14 @@ console.log(`${name}의 나이는 ${ages}세 입니다.`)
 console.log(`${name}의 이메일 주소는 ${user.email}입니다.`)
 console.log(address)
 
-const [aa, , cc, dd] = fruits
-console.log(aa,cc,dd)
+const [aaa, , ccc, ddd] = fruits
+console.log(aaa,ccc,ddd)
+
+// 전개 연산자(Spread)
+console.log(fruits)
+console.log(...fruits)
+fruits.push('orange')
+
+const toObject = (aa, bb, ...cc) => ({aa, bb, cc})
+console.log(toObject(...fruits))
+fruits.splice(3,1)
