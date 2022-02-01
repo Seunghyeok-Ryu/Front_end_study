@@ -26,7 +26,7 @@ console.log('round: ', Math.round(3.5))
 console.log('random: ', Math.random())
 
 
-// 배열
+// 배열(Array)
 const numbers = [1, 2, 3, 4]
 const fruits = ['Apple', 'Banana', 'Cherry']
 
@@ -105,3 +105,48 @@ console.log(numbers)
 
 fruits.splice(2, 0 , 'orange')
 console.log(fruits)
+
+// 객체(Object)
+
+// .assign()
+const userAge = {
+  name: 'Heropy',
+  age: 24
+}
+const userEmail = {
+  name: 'ffffaa',
+  email: 'harrisonryu@naver.com'
+}
+
+const target = Object.assign({}, userAge, userEmail)
+console.log(target)
+console.log(userAge)
+console.log(target === userAge)
+
+const i = { k : 123}
+const j = { k : 123}
+console.log(i === j)
+
+// .keys()
+const user = {
+  name : 'harrisonryu',
+  age : 25,
+  email : 'harrisonryu@naver.com'
+}
+
+const keys = Object.keys(user)
+console.log(keys)
+
+console.log(user['email'])
+
+const values = keys.map(key => user[key])
+console.log(values)
+
+// 구조 분해 할당(Destructuring assignment)
+
+const {name, age, email, address} = user
+
+console.log(`사용자의 이름은 ${name}입니다.`)
+console.log(`${name}의 나이는 ${age}세 입니다.`)
+console.log(`${name}의 이메일 주소는 ${email}입니다.`)
+console.log(address)
