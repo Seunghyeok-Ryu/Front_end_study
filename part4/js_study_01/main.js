@@ -100,11 +100,11 @@ console.log(h)
 
   // .splice()    원본 수정
 
-numbers.splice(1, 2, 99)
-console.log(numbers)
+// numbers.splice(1, 2, 99)
+// console.log(numbers)
 
-fruits.splice(2, 0 , 'orange')
-console.log(fruits)
+// fruits.splice(2, 0 , 'orange')
+// console.log(fruits)
 
 // 객체(Object)
 
@@ -144,9 +144,12 @@ console.log(values)
 
 // 구조 분해 할당(Destructuring assignment)
 
-const {name, age, email, address} = user
+const {name, age: ages, address = 'Korea'} = user
 
 console.log(`사용자의 이름은 ${name}입니다.`)
-console.log(`${name}의 나이는 ${age}세 입니다.`)
-console.log(`${name}의 이메일 주소는 ${email}입니다.`)
+console.log(`${name}의 나이는 ${ages}세 입니다.`)
+console.log(`${name}의 이메일 주소는 ${user.email}입니다.`)
 console.log(address)
+
+const [aa, , cc, dd] = fruits
+console.log(aa,cc,dd)
