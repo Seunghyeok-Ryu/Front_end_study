@@ -7,7 +7,9 @@ abbcccdddd
 `
 
 // const regexp = new RegExp('the','gi')
-const regexp = /fox/gi
+
 // console.log(regexp.test(str))
-console.log(str.replace(regexp, 'AAA'))
+// console.log(str.replace(regexp, 'AAA'))
 // replace 원본에 영향을 끼치지 않음
+
+console.log(str.match(/\.$/gim))
